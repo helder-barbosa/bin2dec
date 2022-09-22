@@ -1,0 +1,35 @@
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  width: 5em;
+  padding: 8px;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input, .output {
+  padding: 8px;
+  height: 7em;
+  width: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gainsboro;
+  font-size: 2em;
+  font-weight: 700;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" >
+  <title>Bin2Dec</title>
+</head>
+<body>
+  <h1>Bin2Dec 📋</h1>
+
+  <div class="container">
+    <div class="input">
+      
+      <input placeholder="Binary" pattern="[0-1]" type="text" maxlength="8" onchange="convert(this.value)" required/>
+    </div>
+    <div class="output">
+      
+      <h2 id="result">0</h2>
+    </div>
+  </div>
+
+  <script>
+    function convert (num) {
+      
+      var numDec = parseInt(num, 2).toString()
+
+      document.getElementById('result').innerText = numDec
+
+    }
+  </script>
+</body>
+</html>
